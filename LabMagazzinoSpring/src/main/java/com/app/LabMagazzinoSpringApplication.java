@@ -1,13 +1,12 @@
-package com.app.universita;
+package com.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProgettoUniversitaApplication {
+public class LabMagazzinoSpringApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProgettoUniversitaApplication.class, args);
-		System.out.println("ciao sono su git");
+		SpringApplication.run(LabMagazzinoSpringApplication.class, args);
 	}
 }
