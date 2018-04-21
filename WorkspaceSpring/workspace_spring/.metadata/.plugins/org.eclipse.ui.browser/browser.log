@@ -1,0 +1,10 @@
+
+ago 03, 2017 16:43:41.44 NEW SESSION
+ago 03, 2017 16:43:41.44 [5300:6836:0803/164341.435:ERROR:media_internals.cc(103)] Cannot get RenderProcessHost
+ago 03, 2017 17:40:59.05 [6528:7848:0803/174058.977:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+ago 03, 2017 17:41:25.23 [6528:7848:0803/174125.232:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+ago 03, 2017 17:41:34.02 [6528:2568:0803/174134.029:ERROR:account_tracker.cc(356)] OnGetTokenFailure: Connection failed (-106).
+ago 03, 2017 17:41:34.04 [6528:2568:0803/174134.029:ERROR:account_tracker.cc(356)] OnGetTokenFailure: Connection failed (-106).
+ago 03, 2017 17:42:06.22 [6528:7848:0803/174206.226:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+ago 03, 2017 17:44:05.74 [6528:7848:0803/174405.746:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106
+ago 03, 2017 17:47:51.34 [6528:7848:0803/174751.346:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -106

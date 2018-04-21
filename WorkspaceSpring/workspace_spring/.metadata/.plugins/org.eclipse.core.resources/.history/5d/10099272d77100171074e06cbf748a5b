@@ -1,0 +1,45 @@
+package com.app.model.dao;
+
+import java.util.ArrayList;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+import com.app.model.entity.Prodotto;
+
+@Repository // è il contesto di spring che annota che questa classe si occuperà solo dei dao
+@Transactional
+public class ProdottoDao {
+	
+	@PersistenceContext
+	private EntityManager entity;
+	
+	public void inserimento(Prodotto p) {
+		entity.persist(p);
+		entity.flush();
+		entity.clear();
+	}
+	
+	public Prodotto returnProdottoById(int id) {
+		Prodotto p=entity.find(Prodotto.class, id);
+		return p;
+	}
+	
+	public void modifica(Prodotto p) {
+		entity.merge(p);
+		entity.flush();
+		entity.clear();
+	}
+	
+	public void cancella(Prodotto p) {
+		entity.remove(entity.merge(p));
+		entity.flush();
+	}
+	
+	@SuppressWarnings("unchecked")
+	public ArrayList<Prodotto> visualizza() {
+		ArrayList<Prodotto> prodotti= (ArrayList<Prodotto>)entity.createQuery("From Prodotto").getResultList();
+		return prodotti;
+	}
+	
+}

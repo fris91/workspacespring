@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;model.xsd&apos; to &apos;XMLLabImport/src/model&apos;&#x0D;&#x0A;- Original project: &apos;XMLLabImport&apos;&#x0D;&#x0A;- Destination element: &apos;XMLLabImport/src/model&apos;&#x0D;&#x0A;- Original element: &apos;model.xsd&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="/src&lt;model" element1="src/model.xsd" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1501499177015" units="0" version="1.0"/>
+</session>

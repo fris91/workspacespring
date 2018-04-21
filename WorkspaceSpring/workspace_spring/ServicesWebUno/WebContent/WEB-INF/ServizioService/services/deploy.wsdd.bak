@@ -1,0 +1,34 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ServizioService WSDL service -->
+
+  <service name="Servizio" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://services"/>
+      <parameter name="wsdlServiceElement" value="ServizioService"/>
+      <parameter name="schemaQualified" value="http://services"/>
+      <parameter name="wsdlServicePort" value="Servizio"/>
+      <parameter name="className" value="services.ServizioSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="Servizio"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="somma" qname="operNS:somma" xmlns:operNS="http://services" returnQName="retNS:sommaReturn" xmlns:retNS="http://services" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:a" xmlns:pns="http://services" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:b" xmlns:pns="http://services" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="sottrazione" qname="operNS:sottrazione" xmlns:operNS="http://services" returnQName="retNS:sottrazioneReturn" xmlns:retNS="http://services" returnType="rtns:int" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:a" xmlns:pns="http://services" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:b" xmlns:pns="http://services" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="sottrazione somma"/>
+
+  </service>
+</deployment>

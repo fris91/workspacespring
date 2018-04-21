@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;webapp&apos;&#x0D;&#x0A;- Original project: &apos;e_magazzino&apos;&#x0D;&#x0A;- Destination element: &apos;webapp&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     immagini&#x0D;&#x0A;     bootstrap&#x0D;&#x0A;     jspf&#x0D;&#x0A;     js" description="Copy folders" element1="WebContent/immagini" element2="WebContent/bootstrap" element3="WebContent/jspf" element4="WebContent/js" files="0" flags="589830" folders="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1500884949060" target="/LabMagazzinoSpring/src/main/webapp" units="0" version="1.0"/>
+</session>
